@@ -376,7 +376,7 @@ namespace PuzzleTimer.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 2. Чтобы использовать скрамблы для 2x2-7x7, вы должны держать свой куб так: Перёд - Зелёный, Слева - Оранжевый; Для Skweb: Верх - Белый, Слева - Зелёный; Для Pyraminx: Перёд - Зелёный, Слева - Красное; Для Megaminx: Верх - Белый, Перёд - Темнозелёный;.
+        ///   Looks up a localized string similar to 2. Чтобы использовать скрамблы для 2x2-7x7, вы должны держать свой куб так: Перёд - Зелёный, Слева - Оранжевый; Для Skewb: Верх - Белый, Слева - Зелёный; Для Pyraminx: Перёд - Зелёный, Слева - Красное; Для Megaminx: Верх - Белый, Перёд - Темнозелёный;.
         /// </summary>
         internal static string HelpText3 {
             get {

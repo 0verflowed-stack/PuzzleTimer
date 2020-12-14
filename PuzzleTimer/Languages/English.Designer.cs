@@ -376,7 +376,7 @@ namespace PuzzleTimer.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 2.To use scrambles for 2x2-7x7 you must hold your cube this way: Front - Green, Left - Orange;For Skweb: Up - White, Left - Green; For Pyraminx: Front - Green, Left - Red; For Megaminx: Up - White, Front - Dark Green;.
+        ///   Looks up a localized string similar to 2.To use scrambles for 2x2-7x7 you must hold your cube this way: Front - Green, Left - Orange;For Skewb: Up - White, Left - Green; For Pyraminx: Front - Green, Left - Red; For Megaminx: Up - White, Front - Dark Green;.
         /// </summary>
         internal static string HelpText3 {
             get {
