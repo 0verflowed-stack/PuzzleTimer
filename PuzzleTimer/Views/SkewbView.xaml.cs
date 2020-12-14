@@ -13,10 +13,10 @@ using System.Windows.Shapes;
 
 namespace PuzzleTimer.Views {
     /// <summary>
-    /// Interaction logic for SkwebView.xaml
+    /// Interaction logic for SkewbView.xaml
     /// </summary>
-    public partial class SkwebView : UserControl {
-        public SkwebView() {
+    public partial class SkewbView : UserControl {
+        public SkewbView() {
             InitializeComponent();
         }
     }

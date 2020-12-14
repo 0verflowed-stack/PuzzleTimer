@@ -8,7 +8,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 
 namespace PuzzleTimer.ViewModels {
-    class SkwebViewModel : ViewModel {
+    class SkewbViewModel : ViewModel {
         ObservableCollection<Brush> _ColorFirst;
         public ObservableCollection<Brush> ColorFirst {
             get => _ColorFirst;
@@ -64,7 +64,7 @@ namespace PuzzleTimer.ViewModels {
         public ICommand SizeChangedCommand { get; }
         #endregion
         #endregion
-        public SkwebViewModel() {
+        public SkewbViewModel() {
             InitializeColors();
             SizeChangedCommand = new RelayCommand<SizeChangedEventArgs>(OnSizeChangedCommand, null);
             ControlWidth = 685;

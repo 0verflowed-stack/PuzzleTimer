@@ -48,10 +48,10 @@ namespace PuzzleTimer.ViewModels {
             get => _NByNCubeViewModelProperty;
             set => Set(ref _NByNCubeViewModelProperty, value);
         }
-        private SkwebViewModel _SkwebViewModel;
-        public SkwebViewModel SkwebViewModelProperty {
-            get => _SkwebViewModel;
-            set => Set(ref _SkwebViewModel, value);
+        private SkewbViewModel _SkewbViewModel;
+        public SkewbViewModel SkewbViewModelProperty {
+            get => _SkewbViewModel;
+            set => Set(ref _SkewbViewModel, value);
         }
         private PyraminxViewModel _PyraminxViewModel;
         public PyraminxViewModel PyraminxViewModelProperty {
@@ -745,7 +745,7 @@ namespace PuzzleTimer.ViewModels {
                 UnfoldsVisibility.Add(Visibility.Collapsed);
             }
             NByNCubeViewModelProperty = new NByNCubeViewModel(CurrentPuzzle + 2);
-            SkwebViewModelProperty = new SkwebViewModel();
+            SkewbViewModelProperty = new SkewbViewModel();
             PyraminxViewModelProperty = new PyraminxViewModel();
             MegaminxViewModelProperty = new MegaminxViewModel();
             ControlHeight = 580;
@@ -872,10 +872,10 @@ namespace PuzzleTimer.ViewModels {
             NByNCubeViewModelProperty.ControlHeight = controlHeight * widthToHeight*0.95;
             NByNCubeViewModelProperty.ControlWidth = controlHeight * heightToWidth*0.95;
 
-            SkwebViewModelProperty.ScaleX = controlHeight * heightToWidth / 51.5;
-            SkwebViewModelProperty.ScaleY = controlHeight * widthToHeight / 42.0;
-            SkwebViewModelProperty.ControlHeight = controlHeight * widthToHeight*0.95;
-            SkwebViewModelProperty.ControlWidth = controlHeight * heightToWidth*0.95;
+            SkewbViewModelProperty.ScaleX = controlHeight * heightToWidth / 51.5;
+            SkewbViewModelProperty.ScaleY = controlHeight * widthToHeight / 42.0;
+            SkewbViewModelProperty.ControlHeight = controlHeight * widthToHeight*0.95;
+            SkewbViewModelProperty.ControlWidth = controlHeight * heightToWidth*0.95;
 
             PyraminxViewModelProperty.ScaleX = (controlHeightPyraminx - 15) * heightToWidthPyraminx / 64.0;
             PyraminxViewModelProperty.ScaleY = (controlHeightPyraminx - 15) * widthToHeightPyraminx / 62.0;
@@ -995,7 +995,7 @@ namespace PuzzleTimer.ViewModels {
                 NByNCubeViewModelProperty.SetUnfold(ScrambleText);
             }
             else if (CurrentPuzzle == 6) {
-                SkwebViewModelProperty.SetUnfold(ScrambleText);
+                SkewbViewModelProperty.SetUnfold(ScrambleText);
             }
             else if (CurrentPuzzle == 7) {
                 PyraminxViewModelProperty.SetUnfold(ScrambleText);

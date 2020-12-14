@@ -54,10 +54,10 @@
                                 DataContext="{Binding NByNCubeViewModelProperty, UpdateSourceTrigger=PropertyChanged}"/>
                 </StackPanel>
                 <StackPanel Visibility="{Binding UnfoldsVisibility[1], UpdateSourceTrigger=PropertyChanged}">
-                    <local:SkwebView Background="Transparent"
+                    <local:SkewbView Background="Transparent"
                                 Width="{Binding ControlWidth, UpdateSourceTrigger=PropertyChanged}"
                                 Height="{Binding ControlHeight, UpdateSourceTrigger=PropertyChanged}"
-                                DataContext="{Binding SkwebViewModelProperty, UpdateSourceTrigger=PropertyChanged}"/>
+                                DataContext="{Binding SkewbViewModelProperty, UpdateSourceTrigger=PropertyChanged}"/>
                 </StackPanel>
                 <StackPanel Visibility="{Binding UnfoldsVisibility[2], UpdateSourceTrigger=PropertyChanged}">
                     <local:PyraminxView Background="Transparent"

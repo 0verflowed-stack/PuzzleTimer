@@ -33,10 +33,10 @@ namespace PuzzleTimer.ViewModels {
             get => _NByNCubeViewModelProperty;
             set => Set(ref _NByNCubeViewModelProperty, value);
         }
-        private SkwebViewModel _SkwebViewModel;
-        public SkwebViewModel SkwebViewModelProperty {
-            get => _SkwebViewModel;
-            set => Set(ref _SkwebViewModel, value);
+        private SkewbViewModel _SkewbViewModel;
+        public SkewbViewModel SkewbViewModelProperty {
+            get => _SkewbViewModel;
+            set => Set(ref _SkewbViewModel, value);
         }
         private PyraminxViewModel _PyraminxViewModel;
         public PyraminxViewModel PyraminxViewModelProperty {
@@ -117,7 +117,7 @@ namespace PuzzleTimer.ViewModels {
                         NByNCubeViewModelProperty?.SetUnfold(ScrambleTextBox);
                     } else if (ComboBoxSelectedIndex == 6) {
                         UnfoldsVisibility[1] = Visibility.Visible;
-                        SkwebViewModelProperty?.SetUnfold(ScrambleTextBox);
+                        SkewbViewModelProperty?.SetUnfold(ScrambleTextBox);
                     } else if (ComboBoxSelectedIndex == 7) {
                         UnfoldsVisibility[2] = Visibility.Visible;
                         PyraminxViewModelProperty?.SetUnfold(ScrambleTextBox);
@@ -157,7 +157,7 @@ namespace PuzzleTimer.ViewModels {
                         NByNCubeViewModelProperty?.SetUnfold(ScrambleTextBox);
                     } else if (value == 6) {
                         UnfoldsVisibility[1] = Visibility.Visible;
-                        SkwebViewModelProperty?.SetUnfold(ScrambleTextBox);
+                        SkewbViewModelProperty?.SetUnfold(ScrambleTextBox);
                     } else if (value == 7) {
                         UnfoldsVisibility[2] = Visibility.Visible;
                         PyraminxViewModelProperty?.SetUnfold(ScrambleTextBox);
@@ -359,7 +359,7 @@ namespace PuzzleTimer.ViewModels {
         private async void InitializeUnfoldsAsync() {
             await Task.Run(() => {
                 NByNCubeViewModelProperty = new NByNCubeViewModel(7);
-                SkwebViewModelProperty = new SkwebViewModel();
+                SkewbViewModelProperty = new SkewbViewModel();
                 PyraminxViewModelProperty = new PyraminxViewModel();
                 MegaminxViewModelProperty = new MegaminxViewModel();
                 ControlHeight = 600;
@@ -397,7 +397,7 @@ namespace PuzzleTimer.ViewModels {
             } else if (ComboBoxSelectedIndex == 6) {
                 SetUnfoldsSizeAsync(ControlHeight - TopControlOffsetHeight);
                 if (!CheckIfScrambleIsNotValid()) {
-                    SkwebViewModelProperty.SetUnfold(ScrambleTextBox);
+                    SkewbViewModelProperty.SetUnfold(ScrambleTextBox);
                     UnfoldsVisibility[1] = Visibility.Visible;
                 }
             } else if (ComboBoxSelectedIndex == 7) {
@@ -441,10 +441,10 @@ namespace PuzzleTimer.ViewModels {
             NByNCubeViewModelProperty.ControlHeight = controlHeight * widthToHeight * 0.95;
             NByNCubeViewModelProperty.ControlWidth = controlHeight * heightToWidth * 0.95;
 
-            SkwebViewModelProperty.ScaleX = controlHeight * heightToWidth / 51.5;
-            SkwebViewModelProperty.ScaleY = controlHeight * widthToHeight / 42.0;
-            SkwebViewModelProperty.ControlHeight = controlHeight * widthToHeight * 0.95;
-            SkwebViewModelProperty.ControlWidth = controlHeight * heightToWidth * 0.95;
+            SkewbViewModelProperty.ScaleX = controlHeight * heightToWidth / 51.5;
+            SkewbViewModelProperty.ScaleY = controlHeight * widthToHeight / 42.0;
+            SkewbViewModelProperty.ControlHeight = controlHeight * widthToHeight * 0.95;
+            SkewbViewModelProperty.ControlWidth = controlHeight * heightToWidth * 0.95;
 
             PyraminxViewModelProperty.ScaleX = controlHeight * heightToWidth / 64.0;
             PyraminxViewModelProperty.ScaleY = controlHeight * widthToHeight / 62.0;
