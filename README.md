@@ -1,5 +1,5 @@
 # Puzzle Timer 
-![logo](https://github.com/overflowed-stack/PuzzleTimer/PuzzleTimer/Images/logo.ico)
+![logo](https://github.com/overflowed-stack/PuzzleTimer/blob/main/PuzzleTimer/Images/logo.ico)
 ### This application to generate scrambles for puzzles uses this C# library [TNoodle.NET](https://github.com/gaosui/TNoodle.NET), C# implementation of the official WCA (The World Cube Association) TNoodle project.
 ---
 Application has:
