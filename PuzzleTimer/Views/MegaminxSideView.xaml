@@ -1,0 +1,53 @@
+﻿<UserControl x:Class="PuzzleTimer.Views.MegaminxSideView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:b="http://schemas.microsoft.com/xaml/behaviors"
+             xmlns:local="clr-namespace:PuzzleTimer.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="{Binding ControlHeight, UpdateSourceTrigger=PropertyChanged}" 
+             d:DesignWidth="{Binding ControlWidth,UpdateSourceTrigger=PropertyChanged}">
+    <b:Interaction.Triggers>
+        <b:EventTrigger EventName="SizeChanged">
+            <b:InvokeCommandAction Command="{Binding SizeChangedCommand}" PassEventArgsToCommand="True"></b:InvokeCommandAction>
+        </b:EventTrigger>
+    </b:Interaction.Triggers>
+    <Grid Margin="2">
+        <Grid.Resources>
+            <Style TargetType="Polygon">
+                <Setter Property="RenderTransform">
+                    <Setter.Value>
+                        <TransformGroup>
+                            <ScaleTransform ScaleX="{Binding ScaleX, UpdateSourceTrigger=PropertyChanged}" 
+                                            ScaleY="{Binding ScaleY, UpdateSourceTrigger=PropertyChanged}" 
+                                            CenterX="10" CenterY="10" />
+                        </TransformGroup>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+        </Grid.Resources>
+        <Polygon Points="0.49,6.91 4.786,3.76367 6.3513,8.8214 2.04055, 11.869" Stroke="Black" StrokeThickness="0.3" 
+                 Fill="{Binding Color[0], UpdateSourceTrigger=PropertyChanged}" />
+        <Polygon Points="4.786,3.76367 6.3513,8.8214 10.0387,6.21448 5.79112,3.04642" Stroke="Black" StrokeThickness="0.3" 
+                 Fill="{Binding Color[1], UpdateSourceTrigger=PropertyChanged}" />
+        <Polygon Points="10.0387,6.21448 5.79112,3.04642 10.0595,0 14.3453,3.1698" Stroke="Black" StrokeThickness="0.3" 
+                 Fill="{Binding Color[2], UpdateSourceTrigger=PropertyChanged}" />
+        <Polygon Points="10.0387,6.21448 14.3453,3.1698 15.3437,3.908 13.629495,8.89263" Stroke="Black" StrokeThickness="0.3" 
+                 Fill="{Binding Color[3], UpdateSourceTrigger=PropertyChanged}" />
+        <Polygon Points="17.8909,12.048675 13.629495,8.89263 15.3437,3.908 19.54396,7.01457" Stroke="Black" StrokeThickness="0.3" 
+                 Fill="{Binding Color[4], UpdateSourceTrigger=PropertyChanged}" />
+        <Polygon Points="12.17947,13.1088 17.4711,13.21489 17.8909,12.048675 13.629495,8.89263" Stroke="Black" StrokeThickness="0.3" 
+                 Fill="{Binding Color[5], UpdateSourceTrigger=PropertyChanged}" />
+        <Polygon Points="10.4433,18.15697 12.17947,13.1088 17.4711,13.21489 15.87,18.095" Stroke="Black" StrokeThickness="0.3" 
+                 Fill="{Binding Color[6], UpdateSourceTrigger=PropertyChanged}" />
+        <Polygon Points="7.67056,13.0845 9.23713,18.14675 10.4433,18.15697 12.17947,13.1088" Stroke="Black" StrokeThickness="0.3" 
+                 Fill="{Binding Color[7], UpdateSourceTrigger=PropertyChanged}" />
+        <Polygon Points="2.402,13.0144 7.67056,13.0845 9.23713,18.14675 4.12,18.09" Stroke="Black" StrokeThickness="0.3" 
+                 Fill="{Binding Color[8], UpdateSourceTrigger=PropertyChanged}" />
+        <Polygon Points="6.3513,8.8214 2.04055, 11.869 2.402,13.0144 7.67056,13.0845" Stroke="Black" StrokeThickness="0.3" 
+                 Fill="{Binding Color[9], UpdateSourceTrigger=PropertyChanged}" />
+        <Polygon Points="6.3513,8.8214 7.67056,13.0845 12.17947,13.1088 13.629495,8.89263 10.0387,6.21448" Stroke="Black" StrokeThickness="0.3" 
+                 Fill="{Binding Color[10], UpdateSourceTrigger=PropertyChanged}" />
+    </Grid>
+</UserControl>

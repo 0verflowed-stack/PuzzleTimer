@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AboutAuthor" xml:space="preserve">
+    <value>Про приложение</value>
+  </data>
+  <data name="AboutAuthorText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AboutText1" xml:space="preserve">
+    <value>Версия 1.0.0</value>
+  </data>
+  <data name="AboutText2" xml:space="preserve">
+    <value>Создано Дмитрием Альянахом</value>
+  </data>
+  <data name="AboutText3" xml:space="preserve">
+    <value>Больше информации на</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>Добавить</value>
+  </data>
+  <data name="Avg" xml:space="preserve">
+    <value>Середнее</value>
+  </data>
+  <data name="Avg3Last" xml:space="preserve">
+    <value>Среднее 3 посл.: </value>
+  </data>
+  <data name="Avg5Last" xml:space="preserve">
+    <value>Среднее 5 посл.: </value>
+  </data>
+  <data name="AvgAll" xml:space="preserve">
+    <value>Среднее всех: </value>
+  </data>
+  <data name="AvgAnySelected" xml:space="preserve">
+    <value>избранных:</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Отменить</value>
+  </data>
+  <data name="Chart" xml:space="preserve">
+    <value>График</value>
+  </data>
+  <data name="ChartWindowText" xml:space="preserve">
+    <value>Время</value>
+  </data>
+  <data name="ClearAll" xml:space="preserve">
+    <value>Очистить всё</value>
+  </data>
+  <data name="CopyToClipboard" xml:space="preserve">
+    <value>Копировать в буф. обмена</value>
+  </data>
+  <data name="CultureString" xml:space="preserve">
+    <value>ua-UA</value>
+  </data>
+  <data name="CustomScrambleWindowButtonCancel" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="CustomScrambleWindowButtonDone" xml:space="preserve">
+    <value>Готово</value>
+  </data>
+  <data name="CustomScrambleWindowText" xml:space="preserve">
+    <value>Введите собственный скрамбл</value>
+  </data>
+  <data name="DateToolTipText" xml:space="preserve">
+    <value>месяц/день/год час:минута:секунда</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Правка</value>
+  </data>
+  <data name="Generating" xml:space="preserve">
+    <value>Генерирование...</value>
+  </data>
+  <data name="GridHeaderIdText" xml:space="preserve">
+    <value>Id</value>
+  </data>
+  <data name="GridHeaderPuzzleNameText" xml:space="preserve">
+    <value>Тип головоломки</value>
+  </data>
+  <data name="GridHeaderScrambleText" xml:space="preserve">
+    <value>Скрамбл</value>
+  </data>
+  <data name="GridHeaderSolutionDateText" xml:space="preserve">
+    <value>Дата сборки</value>
+  </data>
+  <data name="GridHeaderSolutionTimeText" xml:space="preserve">
+    <value>Время сборки</value>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>Помощь</value>
+  </data>
+  <data name="HelpText1" xml:space="preserve">
+    <value>Краткое руководство:</value>
+  </data>
+  <data name="HelpText10" xml:space="preserve">
+    <value>9. Чтобы увидеть среднее время сборки любого количества последних записей введите соответвующее число внизу окна или выделите записи для которых нужно найти середнее время сборки и оно появится в нижней части экрана;</value>
+  </data>
+  <data name="HelpText11" xml:space="preserve">
+    <value>10. Изменить головоломку можна в выпадающем меню в нижней части окна;</value>
+  </data>
+  <data name="HelpText12" xml:space="preserve">
+    <value>11. На главном окне кнопка Новый скрамбл генерирует новый скрамбл. Кнопка Таблица/Развертка показывает таблицу/развуртку соответственно;</value>
+  </data>
+  <data name="HelpText2" xml:space="preserve">
+    <value>1. Чтобы запустить таймер, нажмите кнопку «Пробел» и удерживайте её более 1 секунды, а затем отпустите, для остановки нажмите кнопку «Пробел» ещё раз;</value>
+  </data>
+  <data name="HelpText3" xml:space="preserve">
+    <value>2. Чтобы использовать скрамблы для 2x2-7x7, вы должны держать свой куб так: Перёд - Зелёный, Слева - Оранжевый; Для Skweb: Верх - Белый, Слева - Зелёный; Для Pyraminx: Перёд - Зелёный, Слева - Красное; Для Megaminx: Верх - Белый, Перёд - Темнозелёный;</value>
+  </data>
+  <data name="HelpText4" xml:space="preserve">
+    <value>3. Дважды нажмите на строку в таблице, чтобы войти в меню обновления, или выберите строку и нажмите Правка-&gt; Обновить;</value>
+  </data>
+  <data name="HelpText5" xml:space="preserve">
+    <value>4. Нажмите на карандаш на главном экране, чтобы ввести свой скрамбл;</value>
+  </data>
+  <data name="HelpText6" xml:space="preserve">
+    <value>5. В пункте меню Помощь-&gt;Настройки можна изменить тему и язык приложения;</value>
+  </data>
+  <data name="HelpText7" xml:space="preserve">
+    <value>6. В пункте меню Правка можна Добавить записи, Удалить все записи; Обновить или Удалить (также с помощю кнопки delete на клавиатуре после вибора записи или записей) записи, если соответвующая ленейка была выбрана в таблице. Также можна копировать основную информацию про сборку, чтобы поделиться, если соответвующая ленейка была выбрана в таблице;</value>
+  </data>
+  <data name="HelpText8" xml:space="preserve">
+    <value>7. Чтобы увидеть график по данной головоломке нажмите на пункт меню График;</value>
+  </data>
+  <data name="HelpText9" xml:space="preserve">
+    <value>8. Чтобы не видеть секундомер во время сборки уберите птичку в "Показать время";</value>
+  </data>
+  <data name="incorrectDate" xml:space="preserve">
+    <value>НЕПРАВИЛЬНАЯ ДАТА СБОРКИ</value>
+  </data>
+  <data name="incorrectScramble" xml:space="preserve">
+    <value>НЕПРАВИЛЬНЫЙ СКРАМБЛ</value>
+  </data>
+  <data name="incorrectScramblePlus" xml:space="preserve">
+    <value>, СКРАМБЛ</value>
+  </data>
+  <data name="incorrectTime" xml:space="preserve">
+    <value>НЕПРАВИЛЬНОЕ ВРЕМЯ СБОРКИ</value>
+  </data>
+  <data name="incorrectTimePlus" xml:space="preserve">
+    <value>, ВРЕМЯ СБОРКИ</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Язык:</value>
+  </data>
+  <data name="Last" xml:space="preserve">
+    <value>посл.:</value>
+  </data>
+  <data name="NewScramble" xml:space="preserve">
+    <value>Новый скрамбл</value>
+  </data>
+  <data name="PuzzleType" xml:space="preserve">
+    <value>Избранная головоломка:</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Сохранить</value>
+  </data>
+  <data name="Scramble" xml:space="preserve">
+    <value>Скрамбл:</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Настройки</value>
+  </data>
+  <data name="ShowTime" xml:space="preserve">
+    <value>Показать время</value>
+  </data>
+  <data name="SolutionDate" xml:space="preserve">
+    <value>Дата сборки:</value>
+  </data>
+  <data name="SolutionTime" xml:space="preserve">
+    <value>Время сборки:</value>
+  </data>
+  <data name="SolutionTimeTextBoxToolTipText" xml:space="preserve">
+    <value>Пример: часы:минуты:секунды.милисекунды(только первые две цифры, например, если 63 милисекунды, тогда пишите 0.06, 727 милесекунд тогда 0.72)</value>
+  </data>
+  <data name="Table" xml:space="preserve">
+    <value>Таблица</value>
+  </data>
+  <data name="Theme" xml:space="preserve">
+    <value>Тема:</value>
+  </data>
+  <data name="Unfold" xml:space="preserve">
+    <value>Развертка</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>Обновить</value>
+  </data>
+  <data name="ZeroItemsCantDrawChart" xml:space="preserve">
+    <value>Нету записей! Невозможно построить график!</value>
+  </data>
+</root>

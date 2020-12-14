@@ -1,0 +1,30 @@
+﻿<UserControl x:Class="PuzzleTimer.Views.AboutView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:b="http://schemas.microsoft.com/xaml/behaviors"
+             xmlns:local="clr-namespace:PuzzleTimer.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800" 
+             Style="{DynamicResource WindowStyle}">
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="{Binding AboutText1}"/>
+            <TextBlock Text="{Binding AboutText2}"/>
+            <TextBlock Text="{Binding AboutText3}"/>
+            <TextBlock>
+                <Hyperlink
+                    NavigateUri="https://github.com/overflowed-stack/PuzzleTimer"
+                    Style="{DynamicResource HyperLinkStyle}">
+                    <b:Interaction.Triggers>
+                        <b:EventTrigger EventName="RequestNavigate">
+                            <b:InvokeCommandAction Command="{Binding NavigateToUrlCommand}" PassEventArgsToCommand="True"></b:InvokeCommandAction>
+                        </b:EventTrigger>
+                    </b:Interaction.Triggers>
+                    <TextBlock Text="GitHub" />
+                </Hyperlink>
+            </TextBlock>
+        </StackPanel>
+    </Grid>
+</UserControl>

@@ -1,0 +1,34 @@
+﻿<UserControl x:Class="PuzzleTimer.Views.NByNCubeSideView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:b="http://schemas.microsoft.com/xaml/behaviors"
+             xmlns:local="clr-namespace:PuzzleTimer.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="35" 
+             d:DesignWidth="35" Background="Black">
+    <UniformGrid Rows="{Binding Size, UpdateSourceTrigger=PropertyChanged}">
+        <local:NByNCubeSideRowView 
+                DataContext="{Binding Rows[0], UpdateSourceTrigger=PropertyChanged}"
+                Visibility="{Binding RowsVisibility[0], UpdateSourceTrigger=PropertyChanged}"/>
+        <local:NByNCubeSideRowView 
+                DataContext="{Binding Rows[1], UpdateSourceTrigger=PropertyChanged}"
+                Visibility="{Binding RowsVisibility[1], UpdateSourceTrigger=PropertyChanged}"/>
+        <local:NByNCubeSideRowView 
+                DataContext="{Binding Rows[2], UpdateSourceTrigger=PropertyChanged}"
+                Visibility="{Binding RowsVisibility[2], UpdateSourceTrigger=PropertyChanged}"/>
+        <local:NByNCubeSideRowView 
+                DataContext="{Binding Rows[3], UpdateSourceTrigger=PropertyChanged}"
+                Visibility="{Binding RowsVisibility[3], UpdateSourceTrigger=PropertyChanged}"/>
+        <local:NByNCubeSideRowView 
+                DataContext="{Binding Rows[4], UpdateSourceTrigger=PropertyChanged}"
+                Visibility="{Binding RowsVisibility[4], UpdateSourceTrigger=PropertyChanged}"/>
+        <local:NByNCubeSideRowView 
+                DataContext="{Binding Rows[5], UpdateSourceTrigger=PropertyChanged}"
+                Visibility="{Binding RowsVisibility[5], UpdateSourceTrigger=PropertyChanged}"/>
+        <local:NByNCubeSideRowView 
+                DataContext="{Binding Rows[6], UpdateSourceTrigger=PropertyChanged}"
+                Visibility="{Binding RowsVisibility[6], UpdateSourceTrigger=PropertyChanged}"/>
+    </UniformGrid>
+</UserControl>

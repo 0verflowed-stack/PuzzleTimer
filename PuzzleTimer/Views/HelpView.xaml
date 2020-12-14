@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="PuzzleTimer.Views.HelpView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:PuzzleTimer.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="550" d:DesignWidth="800" Style="{DynamicResource WindowStyle}" >
+    <Grid>
+        <StackPanel Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock x:Name="helpTextBlock1" Text="{Binding HelpText1}" TextWrapping="Wrap" Margin="0 0 0 5"/>
+            <TextBlock x:Name="helpTextBlock2" Text="{Binding HelpText2}" TextWrapping="Wrap" Margin="0 0 0 5"/>
+            <TextBlock x:Name="helpTextBlock3" Text="{Binding HelpText3}" TextWrapping="Wrap" Margin="0 0 0 5"/>
+            <TextBlock x:Name="helpTextBlock4" Text="{Binding HelpText4}" TextWrapping="Wrap" Margin="0 0 0 5"/>
+            <TextBlock x:Name="helpTextBlock5" Text="{Binding HelpText5}" TextWrapping="Wrap" Margin="0 0 0 5"/>
+            <TextBlock x:Name="helpTextBlock6" Text="{Binding HelpText6}" TextWrapping="Wrap" Margin="0 0 0 5"/>
+            <TextBlock x:Name="helpTextBlock7" Text="{Binding HelpText7}" TextWrapping="Wrap" Margin="0 0 0 5"/>
+            <TextBlock x:Name="helpTextBlock8" Text="{Binding HelpText8}" TextWrapping="Wrap" Margin="0 0 0 5"/>
+            <TextBlock x:Name="helpTextBlock9" Text="{Binding HelpText9}" TextWrapping="Wrap" Margin="0 0 0 5"/>
+            <TextBlock x:Name="helpTextBlock10" Text="{Binding HelpText10}" TextWrapping="Wrap" Margin="0 0 0 5"/>
+            <TextBlock x:Name="helpTextBlock11" Text="{Binding HelpText11}" TextWrapping="Wrap" Margin="0 0 0 5"/>
+            <TextBlock x:Name="helpTextBlock12" Text="{Binding HelpText12}" TextWrapping="Wrap" Margin="0 0 0 5"/>
+        </StackPanel>
+    </Grid>
+</UserControl>
