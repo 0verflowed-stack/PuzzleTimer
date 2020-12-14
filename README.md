@@ -13,7 +13,7 @@ Application has:
 ---
 Available puzzles:
 * 2x2-7x7
-* Skweb
+* Skewb
 * Pyraminx
 * Megaminx
 ---
