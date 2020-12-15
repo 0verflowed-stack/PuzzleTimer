@@ -492,7 +492,7 @@ namespace PuzzleTimer.ViewModels {
 			using (SolutionsDbContext context = new SolutionsDbContext()) {
                 int indexSingle = CurrentSolutionGrid.Id;
                 context.Solutions.RemoveRange(GridSelectedList.OfType<Solution>());
-                context.SaveChangesAsync();
+                context.SaveChanges();
                 List<Solution> tempList = new List<Solution>(GridSelectedList.Cast<Solution>());
                 int index = tempList[0].Id;
                 for (int j = 0; j < tempList.Count; ++j) {
@@ -509,11 +509,11 @@ namespace PuzzleTimer.ViewModels {
                 for (int i = 0; i < n; ++i) {
                     Solution temp = tempList[i];
                     context.Solutions.Remove(temp);
-                    context.SaveChangesAsync();
+                    context.SaveChanges();
                     listOfSolutions[CurrentPuzzle].RemoveAt(i);
                     temp.Id = newIndex++;
                     context.Solutions.Add(temp);
-                    context.SaveChangesAsync();
+                    context.SaveChanges();
                     listOfSolutions[CurrentPuzzle].Insert(i, temp);
                 }
             }
@@ -531,7 +531,7 @@ namespace PuzzleTimer.ViewModels {
             using (SolutionsDbContext context = new SolutionsDbContext()) {
                 var ItemsToRemove = context.Solutions.Where(x => x.PuzzleName == PuzzleNameCollection[CurrentPuzzle]);
                 foreach (var itemToRemove in ItemsToRemove) context.Solutions.Remove(itemToRemove);
-                context.SaveChangesAsync();
+                context.SaveChanges();
                 listOfSolutions[CurrentPuzzle].Clear();
             }
             UpdateAvg();
@@ -1052,7 +1052,7 @@ namespace PuzzleTimer.ViewModels {
                             context.Solutions.Add(
                                 temp
                             );
-                            context.SaveChangesAsync();
+                            context.SaveChanges();
                             listOfSolutions[settings.CurrentPuzzle].Add(
                                 temp
                             );

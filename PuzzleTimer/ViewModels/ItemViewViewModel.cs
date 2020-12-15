@@ -225,7 +225,7 @@ namespace PuzzleTimer.ViewModels {
                         context.Solutions.Add(
                             new Solution(index, PuzzleNameCollection[ComboBoxSelectedIndex], SolutionTimeTextBox,
                                 Convert.ToDateTime(SolutionDateTextBox), ScrambleTextBox));
-                        context.SaveChangesAsync();
+                        context.SaveChanges();
                     }
                     listOfSolutions[ComboBoxSelectedIndex].Add(
                         new Solution(index, PuzzleNameCollection[ComboBoxSelectedIndex], SolutionTimeTextBox,
@@ -242,7 +242,7 @@ namespace PuzzleTimer.ViewModels {
                                     && x.PuzzleName == MainWindowViewModel.PuzzleNameCollection[settings.CurrentPuzzle])
                                 .ToList()[0]
                             );
-                            context.SaveChangesAsync();
+                            context.SaveChanges();
                             listOfSolutions[settings.CurrentPuzzle]
                                 .Remove(listOfSolutions[settings.CurrentPuzzle]
                                 .Where(x => x.Id == CurrentSolutionGrid.Id)
@@ -257,11 +257,11 @@ namespace PuzzleTimer.ViewModels {
                                 if (solution.Id > index) {
                                     Solution temp = solution;
                                     context.Solutions.Remove(temp);
-                                    context.SaveChangesAsync();
+                                    context.SaveChanges();
                                     listOfSolutions[settings.CurrentPuzzle].RemoveAt(i);
                                     temp.Id--;
                                     context.Solutions.Add(temp);
-                                    context.SaveChangesAsync();
+                                    context.SaveChanges();
                                     listOfSolutions[settings.CurrentPuzzle].Insert(i, temp);
                                 }
                             }
@@ -274,7 +274,7 @@ namespace PuzzleTimer.ViewModels {
                             context.Solutions.Add(
                             new Solution(index, PuzzleNameCollection[ComboBoxSelectedIndex], SolutionTimeTextBox,
                                 Convert.ToDateTime(SolutionDateTextBox), ScrambleTextBox));
-                            context.SaveChangesAsync();
+                            context.SaveChanges();
 
                             listOfSolutions[ComboBoxSelectedIndex].Add(
                                 new Solution(index, PuzzleNameCollection[ComboBoxSelectedIndex], SolutionTimeTextBox,
@@ -294,7 +294,7 @@ namespace PuzzleTimer.ViewModels {
                                         ScrambleTextBox)
                                 );
 
-                            context.SaveChangesAsync();
+                            context.SaveChanges();
                             int index = CurrentSolutionGrid.Id;
                             int insertIndex = listOfSolutions[settings.CurrentPuzzle].IndexOf(
                                 listOfSolutions[settings.CurrentPuzzle]
