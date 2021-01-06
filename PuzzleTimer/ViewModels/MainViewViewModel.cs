@@ -12,6 +12,7 @@ using System.Globalization;
 using System.IO;
 using System.IO.Packaging;
 using System.Linq;
+using System.Net;
 using System.Resources;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -559,7 +560,9 @@ namespace PuzzleTimer.ViewModels {
                 chartWindow.ShowDialog();
             }
             else {
-                new MyMessageBoxWindow(ZeroItemsChartText).ShowDialog();
+                string strLanguage = "PuzzleTimer.Languages." + SettingsViewModel.Languages[settings.Language];
+                ResourceManager LocRM = new ResourceManager(strLanguage, typeof(MainWindow).Assembly);
+                new MyMessageBoxWindow(LocRM.GetString("ErrorText"), ZeroItemsChartText, settings).ShowDialog();
             }
         }
         #endregion
@@ -709,6 +712,7 @@ namespace PuzzleTimer.ViewModels {
         #endregion
 
         public MainWindowViewModel() {
+            
             #region Commands
             AddItemCommand = new LambdaCommand(OnAddItemCommandExecuted, CanAddItemCommandExecute);
             UpdateItemCommand = new LambdaCommand(OnUpdateItemCommandExecuted, CanUpdateItemCommandExecute);
@@ -765,6 +769,7 @@ namespace PuzzleTimer.ViewModels {
             sw = new Stopwatch();
             delay = false;
             delay2 = false;
+            CheckForUpdate();
         }
 
         private void OnGridDeleteKeyUp(KeyEventArgs obj) {
@@ -1117,5 +1122,25 @@ namespace PuzzleTimer.ViewModels {
                 }
             });
         }
+        private void CheckForUpdate() {
+            try {
+                WebClient client = new WebClient();
+                Stream stream = client.OpenRead("https://raw.githubusercontent.com/overflowed-stack/PuzzleTimer/main/PuzzleTimer/CurrentVersion.txt");
+                StreamReader reader = new StreamReader(stream);
+                String version = reader.ReadLine().Trim();
+                Version CurrentVersion = typeof(MainWindow).Assembly.GetName().Version;
+                if (CurrentVersion.ToString() != version) {
+                    string strLanguage = "PuzzleTimer.Languages." + SettingsViewModel.Languages[settings.Language];
+                    ResourceManager LocRM = new ResourceManager(strLanguage, typeof(MainWindow).Assembly);
+                    new MyMessageBoxWindow(LocRM.GetString("NewVersionAvailableText"), $"{LocRM.GetString("NewVersionText1")} {version} {LocRM.GetString("NewVersionText2")}", settings, OpenDownloadSite).ShowDialog();
+                }
+            } catch { }
+        }
+        private void OpenDownloadSite() {
+            try {
+                Process.Start(new ProcessStartInfo("https://drive.google.com/drive/folders/17S_kqKifoVJle5IRiYd74ZSmVS_Fk54S?usp=sharing") { UseShellExecute = true });
+            } catch { }
+        }
+       
     }
 }

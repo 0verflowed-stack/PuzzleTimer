@@ -124,7 +124,7 @@
     <value />
   </data>
   <data name="AboutText1" xml:space="preserve">
-    <value>Version 1.0.0</value>
+    <value>Version</value>
   </data>
   <data name="AboutText2" xml:space="preserve">
     <value>Created by Dmytro Alyanakh</value>
@@ -185,6 +185,9 @@
   </data>
   <data name="Edit" xml:space="preserve">
     <value>Edit</value>
+  </data>
+  <data name="ErrorText" xml:space="preserve">
+    <value>Error</value>
   </data>
   <data name="Generating" xml:space="preserve">
     <value>Generating...</value>
@@ -267,6 +270,18 @@
   <data name="NewScramble" xml:space="preserve">
     <value>New Scramble</value>
   </data>
+  <data name="NewVersionAvailableText" xml:space="preserve">
+    <value>New version available!</value>
+  </data>
+  <data name="NewVersionText1" xml:space="preserve">
+    <value>New version of program</value>
+  </data>
+  <data name="NewVersionText2" xml:space="preserve">
+    <value>available! Would you like to go to site and download it?</value>
+  </data>
+  <data name="NoText" xml:space="preserve">
+    <value>No</value>
+  </data>
   <data name="PuzzleType" xml:space="preserve">
     <value>Selected puzzle:</value>
   </data>
@@ -302,6 +317,9 @@
   </data>
   <data name="Update" xml:space="preserve">
     <value>Update</value>
+  </data>
+  <data name="YesText" xml:space="preserve">
+    <value>Yes</value>
   </data>
   <data name="ZeroItemsCantDrawChart" xml:space="preserve">
     <value>Zero items! Can't draw chart!</value>

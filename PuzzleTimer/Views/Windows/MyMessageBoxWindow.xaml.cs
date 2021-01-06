@@ -16,8 +16,10 @@ namespace PuzzleTimer.Views.Windows {
     /// Interaction logic for MyMessageBoxWindow.xaml
     /// </summary>
     public partial class MyMessageBoxWindow : Window {
-        public MyMessageBoxWindow(string text) {
-            DataContext = new MyMessageBoxViewModel(text);
+        public MyMessageBoxWindow(string titleText, string text, Settings settings, NotifyMain YesClicked = null) {
+            DataContext = new MyMessageBoxViewModel(titleText, text, settings, YesClicked == null ? false : true);
+            if(YesClicked != null)
+                ((MyMessageBoxViewModel)DataContext).YesClicked += YesClicked;
             InitializeComponent();
         }
     }

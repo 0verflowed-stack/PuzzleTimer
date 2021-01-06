@@ -8,9 +8,14 @@
              d:DesignHeight="200" d:DesignWidth="400" Style="{DynamicResource WindowStyle}" >
     <Grid>
         <TextBlock Text="{Binding MainText, UpdateSourceTrigger=PropertyChanged}"
-                   VerticalAlignment="Center" HorizontalAlignment="Center"/>
-        <Button Content="OK" Width="100" Height="50"  Style="{DynamicResource ButtonStyle}"
-                HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="10"
-                Command="{Binding OKButtonCommand}"/>
+                   VerticalAlignment="Center" HorizontalAlignment="Center" Width="300" TextWrapping="Wrap"/>
+        <StackPanel HorizontalAlignment="Right" VerticalAlignment="Bottom" Orientation="Horizontal">
+            <Button Content="{Binding YesText, UpdateSourceTrigger=PropertyChanged}" Width="100" Height="50"  Style="{DynamicResource ButtonStyle}"
+                    Margin="10" Visibility="{Binding YesButtonVisibility, UpdateSourceTrigger=PropertyChanged}"
+                    Command="{Binding YesButtonCommand}"/>
+            <Button Content="{Binding NoOKText, UpdateSourceTrigger=PropertyChanged}" Width="100" Height="50"  Style="{DynamicResource ButtonStyle}"
+                     Margin="10"
+                    Command="{Binding OKButtonCommand}"/>
+        </StackPanel>
     </Grid>
 </UserControl>

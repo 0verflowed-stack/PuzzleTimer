@@ -8,7 +8,7 @@
         xmlns:local="clr-namespace:PuzzleTimer.Views.Windows"
         mc:Ignorable="d"
         m:WindowCloser.EnableWindowClosing="True"
-        Title="Error" Height="200" Width="400" ResizeMode="NoResize"  WindowStartupLocation="CenterScreen">
+        Title="{Binding TitleText, UpdateSourceTrigger=PropertyChanged}" Height="200" Width="400" ResizeMode="NoResize"  WindowStartupLocation="CenterScreen">
     <Grid>
         <views:MyMessageBoxView/>
     </Grid>

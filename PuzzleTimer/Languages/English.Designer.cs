@@ -79,7 +79,7 @@ namespace PuzzleTimer.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Version 1.0.0.
+        ///   Looks up a localized string similar to Version.
         /// </summary>
         internal static string AboutText1 {
             get {
@@ -264,6 +264,15 @@ namespace PuzzleTimer.Languages {
         internal static string Edit {
             get {
                 return ResourceManager.GetString("Edit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Error.
+        /// </summary>
+        internal static string ErrorText {
+            get {
+                return ResourceManager.GetString("ErrorText", resourceCulture);
             }
         }
         
@@ -511,6 +520,42 @@ namespace PuzzleTimer.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to New version available!.
+        /// </summary>
+        internal static string NewVersionAvailableText {
+            get {
+                return ResourceManager.GetString("NewVersionAvailableText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to New version of program.
+        /// </summary>
+        internal static string NewVersionText1 {
+            get {
+                return ResourceManager.GetString("NewVersionText1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to available! Would you like to go to site and download it?.
+        /// </summary>
+        internal static string NewVersionText2 {
+            get {
+                return ResourceManager.GetString("NewVersionText2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No.
+        /// </summary>
+        internal static string NoText {
+            get {
+                return ResourceManager.GetString("NoText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Selected puzzle:.
         /// </summary>
         internal static string PuzzleType {
@@ -615,6 +660,15 @@ namespace PuzzleTimer.Languages {
         internal static string Update {
             get {
                 return ResourceManager.GetString("Update", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Yes.
+        /// </summary>
+        internal static string YesText {
+            get {
+                return ResourceManager.GetString("YesText", resourceCulture);
             }
         }
         

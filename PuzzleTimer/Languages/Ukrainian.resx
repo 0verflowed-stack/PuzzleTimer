@@ -124,7 +124,7 @@
     <value />
   </data>
   <data name="AboutText1" xml:space="preserve">
-    <value>Версія 1.0.0</value>
+    <value>Версія</value>
   </data>
   <data name="AboutText2" xml:space="preserve">
     <value>Створено Дмитром Альянахом</value>
@@ -185,6 +185,9 @@
   </data>
   <data name="Edit" xml:space="preserve">
     <value>Редагувати</value>
+  </data>
+  <data name="ErrorText" xml:space="preserve">
+    <value>Помилка</value>
   </data>
   <data name="Generating" xml:space="preserve">
     <value>Генерування...</value>
@@ -267,6 +270,18 @@
   <data name="NewScramble" xml:space="preserve">
     <value>Новий скрамбл</value>
   </data>
+  <data name="NewVersionAvailableText" xml:space="preserve">
+    <value>Нова версія доступна!</value>
+  </data>
+  <data name="NewVersionText1" xml:space="preserve">
+    <value>Нова версія програми</value>
+  </data>
+  <data name="NewVersionText2" xml:space="preserve">
+    <value>доступна! Чи хочете ви перейти на сайт і скачати її?</value>
+  </data>
+  <data name="NoText" xml:space="preserve">
+    <value>Ні</value>
+  </data>
   <data name="PuzzleType" xml:space="preserve">
     <value>Вибрана головоломка:</value>
   </data>
@@ -302,6 +317,9 @@
   </data>
   <data name="Update" xml:space="preserve">
     <value>Оновити</value>
+  </data>
+  <data name="YesText" xml:space="preserve">
+    <value>Так</value>
   </data>
   <data name="ZeroItemsCantDrawChart" xml:space="preserve">
     <value>Немає записів! Неможливо побудувати графік!</value>

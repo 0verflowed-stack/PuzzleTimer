@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Reflection;
 using System.Resources;
 using System.Text;
 using System.Windows.Input;
@@ -45,7 +46,8 @@ namespace PuzzleTimer.ViewModels {
         private void ChangeLanguage(bool addUpdate = false) {
             string strLanguage = "PuzzleTimer.Languages." + SettingsViewModel.Languages[settings.Language];
             ResourceManager LocRM = new ResourceManager(strLanguage, typeof(MainWindow).Assembly);
-            AboutText1 = LocRM.GetString("AboutText1");
+            Version ver = typeof(MainWindow).Assembly.GetName().Version;
+            AboutText1 = LocRM.GetString("AboutText1") + " " + ver;
             AboutText2 = LocRM.GetString("AboutText2");
             AboutText3 = LocRM.GetString("AboutText3");
         }
