@@ -5,7 +5,7 @@
 Application has:
 * Generation of scrambles
 * Unfolds for scrambles
-* Some kind of statistics (charts, avarage solution time)
+* Some kind of statistics (charts, average solution time)
 * Themes
 * Languages
 * Saving results of solutions
