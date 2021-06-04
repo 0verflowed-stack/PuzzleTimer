@@ -26,6 +26,3 @@ Available languages:
 * English
 * Russian
 * Ukrainian
----
-## Download
-You can download the latest version (win-x64) of this application by this [link](https://drive.google.com/drive/folders/17S_kqKifoVJle5IRiYd74ZSmVS_Fk54S?usp=sharing).
