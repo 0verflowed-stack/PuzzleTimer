@@ -1125,7 +1125,7 @@ namespace PuzzleTimer.ViewModels {
         private void CheckForUpdate() {
             try {
                 WebClient client = new WebClient();
-                Stream stream = client.OpenRead("https://raw.githubusercontent.com/overflowed-stack/PuzzleTimer/main/PuzzleTimer/CurrentVersion.txt");
+                Stream stream = client.OpenRead("https://raw.githubusercontent.com/0verflowed-stack/PuzzleTimer/main/PuzzleTimer/CurrentVersion.txt");
                 StreamReader reader = new StreamReader(stream);
                 String version = reader.ReadLine().Trim();
                 Version CurrentVersion = typeof(MainWindow).Assembly.GetName().Version;
