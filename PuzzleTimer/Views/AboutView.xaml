@@ -15,7 +15,7 @@
             <TextBlock Text="{Binding AboutText3}"/>
             <TextBlock>
                 <Hyperlink
-                    NavigateUri="https://github.com/overflowed-stack/PuzzleTimer"
+                    NavigateUri="https://github.com/0verflowed-stack/PuzzleTimer"
                     Style="{DynamicResource HyperLinkStyle}">
                     <b:Interaction.Triggers>
                         <b:EventTrigger EventName="RequestNavigate">
