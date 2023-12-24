@@ -24,8 +24,9 @@ Available theme:
 ---
 Available languages:
 * English
-* Russian
 * Ukrainian
+* Russian
+
 
 2x2 unfold:
 
